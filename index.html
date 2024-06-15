@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Anime To-Do List</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+    
+            body {
+                color: #333;
+                font-family: 'Qetod', serif;
+                margin: 0;
+                padding: 0;
+            }
+            .background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-size: cover;
+                background-position: center;
+                transition: opacity 1s ease-in-out;
+            }
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                z-index: -1;
+            }
+            .hero-section {
+                padding: 100px 0;
+                text-align: center;
+                position: relative;
+                color: #fff;
+                z-index: 1;
+            }
+            .hero-section h1 {
+                font-size: 64px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: #f8f9fa;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            }
+            .hero-section p {
+                font-size: 20px;
+                margin-bottom: 30px;
+                color: #f8f9fa;
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            }
+            .hero-section .btn-container {
+                display: flex;
+                justify-content: center;
+            }
+            .btn-primary {
+                padding: 12px 30px;
+                font-size: 16px;
+                background-color: #D8EFD3;
+                border: none;
+                border-radius: 30px;
+                transition: background-color 0.3s;
+                color: #000; /* Change text color to black */
+            }
+            .btn-primary:hover {
+                background-color: #95D2B3;
+            }
+            .content-section {
+                padding: 60px 0;
+                background: linear-gradient(to right, #95D2B3, #55AD9B);
+            }
+            .content-section h2 {
+                text-align: center;
+                font-size: 36px;
+                margin-bottom: 40px;
+                font-weight: 700;
+                color: #333;
+            }
+            .card {
+                background-color: #F1F8E8;
+                border: none;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+            .card:hover {
+                transform: translateY(-10px);
+            }
+            .card-img-top {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+            }
+            .card-body {
+                padding: 20px;
+                text-align: center;
+            }
+            .card-text {
+                font-size: 16px;
+                margin-bottom: 20px;
+                color: #555;
+            }
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                margin-top: 40px;
+            }
+            footer p {
+                margin: 0;
+                font-size: 14px;
+            }
+            .btn-primary {
+                background-color: #D8EFD3;
+                border-color: #D8EFD3;
+            }
+            .btn-primary:hover {
+                background-color: #95D2B3;
+                border-color: #95D2B3;
+            }
+            .subtitle {
+                font-size: 14px;
+                color: #f8f9fa;
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            }
+        </style>
+    </head>
+    <body cz-shortcut-listen="true">
+        <div class="background" style="background-image: url(&quot;https://cdn.openart.ai/stable_diffusion/c174d48619a93fc73eec7c72c36bad1c18b2b54c_2000x2000.webp&quot;);"></div>
+        <div class="overlay"></div>
+    
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <h2>Welcome to</h2>
+                <h1>My Anime To-Do List</h1>
+                <p>Create your List in an organized and fun way!</p>
+                <p class="subtitle">整理された楽しい方法でリストを作成しましょう。!</p>
+                <div class="btn-container">
+                    <a href="index.php" class="btn btn-primary">Create List</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://img.getimg.ai/generated/img-ykD0kLkLa0fLsAUKaQxZT.jpeg" class="card-img-top" alt="Add titles">
+                            <div class="card-body">
+                                <p class="card-text">Create and manage your tasks with ease!</p>
+                                <p class="subtitle">タスクを簡単に作成および管理する!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://img.getimg.ai/generated/img-gucTOWkiJNguGxePfjSyf.jpeg" class="card-img-top" alt="Rate movies">
+                            <div class="card-body">
+                                <p class="card-text">Mark tasks as completed and track your progress!</p>
+                                <p class="subtitle">タスクを完了としてマークし、進捗状況を追跡する!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://img.getimg.ai/generated/img-VkoaVdSlREPjYDTLapRqL.jpeg" class="card-img-top" alt="Add titles">
+                            <div class="card-body">
+                                <p class="card-text">Update and delete tasks as needed!</p>
+                                <p class="subtitle">必要に応じてタスクを更新および削除します!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2024 My Anime To do List. All rights reserved.</p>
+            <p class="subtitle">© 2024 私のアニメのやるべきことリスト。無断転載を禁じます</p>
+        </footer>
+    
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <!-- JavaScript for changing background image -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const images = [
+                    'https://i.pinimg.com/564x/93/6c/05/936c054d461659d94c04723f8507ca5e.jpg',
+                    'https://as2.ftcdn.net/v2/jpg/04/41/38/41/1000_F_441384157_gOfxYsE6A12zRUizcWsdmBwOpSI8bQLM.jpg',
+                    'https://img.getimg.ai/generated/img-sRj9hzhDYdnmqv4WONU16.jpeg',
+                    'https://img.getimg.ai/generated/img-A4dq9aFdXw8Saj8x9HIBZ.jpeg',
+                    'https://img.getimg.ai/generated/img-5nHO8yMS8C6j3U4BfdyOq.jpeg'
+                ];
+    
+                const randomImage = images[Math.floor(Math.random() * images.length)];
+                document.querySelector('.background').style.backgroundImage = `url('${randomImage}')`;
+            });
+        </script>
+    
+    
+    </body>
+</html>
