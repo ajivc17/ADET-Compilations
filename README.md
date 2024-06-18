@@ -1,1 +1,1 @@
-anime-todo-app.infinityfreeapp.com
+http://anime-todo-app.infinityfreeapp.com/index.php
